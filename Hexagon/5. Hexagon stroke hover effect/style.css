@@ -76,3 +76,107 @@ body
 	background: rgba(255,255,255,0.02);
 	z-index: 1000;
 }
+
+@media only screen and (min-width:0px) and (max-width:480px){
+	.row
+	{
+		margin-top: -16px;
+		margin-left: -25px;
+	}
+	.row:nth-child(even)
+	{
+		margin-left: 0.5px;
+	}
+	.hexagon
+	{
+		position: relative;
+		width: 50px;
+		height: 55px;
+		background: #111;
+		margin: 1px;
+		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		transition: 2s;
+	}
+	.hexagon:hover
+	{
+		transition: 0s;
+		background: #0f0;
+	}
+	.hexagon:after
+	{
+		content: '';
+		position: absolute;
+		top: 2px; 
+		bottom: 2px;
+		left: 2px;
+		right: 2px;
+		background: #111;
+		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		z-index: 1;
+	}
+	.hexagon:before
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		height: 100%;
+		pointer-events: none;
+		background: rgba(255,255,255,0.02);
+		z-index: 1000;
+	}
+
+}
+
+@media only screen and (min-height:0px) and (max-height:480px){
+	.row
+	{
+		margin-top: -16px;
+		margin-left: -25px;
+	}
+	.row:nth-child(even)
+	{
+		margin-left: 0.5px;
+	}
+	.hexagon
+	{
+		position: relative;
+		width: 50px;
+		height: 55px;
+		background: #111;
+		margin: 1px;
+		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		transition: 2s;
+	}
+	.hexagon:hover
+	{
+		transition: 0s;
+		background: #0f0;
+	}
+	.hexagon:after
+	{
+		content: '';
+		position: absolute;
+		top: 2px; 
+		bottom: 2px;
+		left: 2px;
+		right: 2px;
+		background: #111;
+		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		z-index: 1;
+	}
+	.hexagon:before
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		height: 100%;
+		pointer-events: none;
+		background: rgba(255,255,255,0.02);
+		z-index: 1000;
+	}
+
+}
