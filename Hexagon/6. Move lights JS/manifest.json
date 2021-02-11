@@ -1,0 +1,20 @@
+{
+    "name": "Hexagon",
+    "short_name": "Hex",
+    "description": "Background for app",
+    "icons": [
+        {
+            "src": "img/hexa_icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/hexa_start.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "display": "fullscreen",
+    "start_url": "/CoolProjects/CSS/Hexagon/4.%20Hexagon%20background%20hover%20effect/",
+    "orientation": "landscape"
+}
