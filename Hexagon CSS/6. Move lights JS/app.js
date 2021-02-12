@@ -22,7 +22,4 @@ window.onmousemove = (e) => {
     cursor.style.top = `${e.clientY}px`;
 }
 
-window.ontouchmove = (e) => {
-    cursor.style.left = `${e.clientX}px`;
-    cursor.style.top = `${e.clientY}px`;
-}
+
