@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #091921;
+}
+.clock {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(clock.png);
+  background-size: cover;
+  border: 10px solid #091921;
+  border-radius: 50%;
+  box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.1),
+    inset 0 -15px 15px rgba(255, 255, 255, 0.1), 0 -15px 15px rgba(0, 0, 0, 0.1),
+    inset 0 -15px 15px rgba(0, 0, 0, 0.1);
+}
+.clock:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 999;
+}
+.clock__hour,
+.clock__min,
+.clock__sec {
+  position: absolute;
+}
+
+.clock__hour,
+.clock__hour__hr {
+  width: 160px;
+  height: 160px;
+}
+
+.clock__min,
+.clock__min__mn {
+  width: 190px;
+  height: 190px;
+}
+.clock__sec,
+.clock__sec__sc {
+  width: 230px;
+  height: 230px;
+}
+
+.clock__hour__hr,
+.clock__min__mn,
+.clock__sec__sc {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  position: absolute;
+  border-radius: 50%;
+}
+
+.clock__hour__hr:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 80px;
+  background: #ff105e;
+  z-index: 9;
+  border-radius: 6px 6px 0 0;
+}
+
+.clock__min__mn:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 90px;
+  background: #fff;
+  z-index: 10;
+  border-radius: 6px 6px 0 0;
+}
+
+.clock__sec__sc:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  background: #fff;
+  z-index: 12;
+  border-radius: 6px 6px 0 0;
+}
+
+/* @media (min-width: 360px) and(max-width: 410px) {
+} */
