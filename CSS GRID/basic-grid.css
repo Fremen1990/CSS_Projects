@@ -1,0 +1,16 @@
+.basic-grid {
+  display: grid;
+  gap: 1rem;
+
+  /* 1 basic grid-template - ugly*/
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  /* 2 cleaner grid template */
+  grid-template-columns: repeat(12, 1fr);
+
+  /* 3 better sizing - but overflow horizontally  */
+  grid-template-columns: repeat(12, minmax(240px, 1fr));
+
+  /* 4 final auto-fir */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
